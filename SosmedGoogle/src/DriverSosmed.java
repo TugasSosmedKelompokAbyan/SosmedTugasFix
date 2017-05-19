@@ -12,7 +12,7 @@ public class DriverSosmed {
         
         String nama, email, jenisKelamin;
         int mengulang, tglLahir;
-        int group;
+        int circle;
         
         System.out.println("            Google+            ");
         System.out.println("------------------------------------");
@@ -21,9 +21,9 @@ public class DriverSosmed {
         try{
             do{
                 System.out.print("Pilih Circle (1/2) : ");
-                group = input.nextInt();
+                circle = input.nextInt();
                 
-                if(group == 1){
+                if(circle == 1){
                     System.out.print("Masukkan Nama  : ");
                     nama = input.next();
             
