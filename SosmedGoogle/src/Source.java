@@ -1,11 +1,10 @@
 public class Source {
-	public class Data {
 	    protected String nama;
 	    protected int tglLahir;
 	    protected String email;
 	    protected String jenisKelamin;
 	    
-	    public Data(String nama,int tglLahir, String email, String jenisKelamin) {
+	    public Source(String nama,int tglLahir, String email, String jenisKelamin) {
 	        this.nama = nama;
 	        this.tglLahir = tglLahir;
 	        this.email = email;
@@ -27,7 +26,21 @@ public class Source {
 	    public void setTglLahir(int tglLahir){
 	    	this.tglLahir = tglLahir;
 	    }
+	    
+	    public String getEmail() {
+	        return email;
+	    }
 
-}
+	    public void setEmail(String email) {
+	        this.email = email;
+	    }
+
+	    public String getJenisKelamin() {
+	        return jenisKelamin;
+	    }
+
+	    public void setJenisKelamin(String jenisKelamin) {
+	        this.jenisKelamin = jenisKelamin;
+	    }
 }
 
