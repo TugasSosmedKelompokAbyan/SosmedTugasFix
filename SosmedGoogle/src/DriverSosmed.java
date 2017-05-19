@@ -10,3 +10,5 @@ public class DriverSosmed {
         String nama, email, jenisKelamin;
         int mengulang, tglLahir;
         int group;
+}
+}
