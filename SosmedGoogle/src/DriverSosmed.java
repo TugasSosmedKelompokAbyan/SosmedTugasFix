@@ -55,5 +55,31 @@ public class DriverSosmed {
                 mengulang = input.nextInt();
                 System.out.println("");
             }
+            while(mengulang != 0);
+        }
+        catch(java.util.InputMismatchException a){
+            System.err.println("Input Harus Angka");
+        }
+        
+        System.out.println("------------------------------------");
+        
+
+        mapData.put("circle1", list);
+        mapData.put("circle2", list2);
+        
+
+        System.out.println("Circle 1");
+        list.forEach((a) -> {
+            System.out.println("Nama : " +a.getNama() +", Tanggal Lahir : " +a.getTglLahir() +" , E-mail : " +a.getEmail() +" , Jenis Kelamin : " +a.getJenisKelamin());
+        });
+        
+        System.out.println("");
+        
+        System.out.println("Circle 2");
+        list2.forEach((b) -> {
+            System.out.println("Nama : " +b.getNama() +", Tanggal Lahir : " +b.getTglLahir() +" , E-mail : " +b.getEmail() +" , Jenis Kelamin : " +b.getJenisKelamin());
+        });
+}
+}
 
 }
