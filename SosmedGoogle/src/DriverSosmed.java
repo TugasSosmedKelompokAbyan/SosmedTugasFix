@@ -1,8 +1,7 @@
-
 public class DriverSosmed {
     public static void main(String[] args) {
-        ArrayList<Data> list = new ArrayList<>();
-        ArrayList<Data> list2 = new ArrayList<>();
+        ArrayList<Source> list = new ArrayList<>();
+        ArrayList<Source> list2 = new ArrayList<>();
         HashMap<String, ArrayList> mapData = new HashMap<String, ArrayList>();
         Scanner input = new Scanner(System.in);
         
@@ -33,6 +32,28 @@ public class DriverSosmed {
                     System.out.print("Masukkan Jenis Kelamin : ");
                     jenisKelamin = input.next();
             
-                    list.add(new Data(nama, tglLahir, email, jenisKelamin));
+                    list.add(new Source(nama, tglLahir, email, jenisKelamin));
                 }
+
+                else{
+                    System.out.print("Masukkan Nama  : ");
+                    nama = input.next();
+            
+                    System.out.print("Masukkan Tanggal Lahir  : ");
+                    tglLahir = input.nextInt();
+                    
+                    System.out.print("Masukkan Email : ");
+                    email = input.next();
+            
+                    System.out.print("Masukkan jenis Kelamin : ");
+                    jenisKelamin = input.next();
+            
+                    list2.add(new Source(nama, tglLahir, email, jenisKelamin));
+                }
+            
+                System.out.print("\nTekan 1 untuk tambah data dan 0 untuk berhenti : ");
+                mengulang = input.nextInt();
+                System.out.println("");
+            }
+
 }
