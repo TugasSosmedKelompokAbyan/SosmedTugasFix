@@ -1,3 +1,7 @@
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class DriverSosmed {
     public static void main(String[] args) {
         ArrayList<Source> list = new ArrayList<>();
@@ -80,6 +84,4 @@ public class DriverSosmed {
             System.out.println("Nama : " +b.getNama() +", Tanggal Lahir : " +b.getTglLahir() +" , E-mail : " +b.getEmail() +" , Jenis Kelamin : " +b.getJenisKelamin());
         });
 }
-}
-
 }
