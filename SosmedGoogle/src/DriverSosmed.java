@@ -11,4 +11,3 @@ public class DriverSosmed {
         int mengulang, tglLahir;
         int group;
 }
-}
