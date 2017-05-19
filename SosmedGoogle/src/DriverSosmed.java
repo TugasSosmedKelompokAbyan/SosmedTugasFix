@@ -6,7 +6,7 @@ public class DriverSosmed {
     public static void main(String[] args) {
         ArrayList<Source> list = new ArrayList<>();
         ArrayList<Source> list2 = new ArrayList<>();
-        HashMap<String, ArrayList> mapData = new HashMap<String, ArrayList>();
+        HashMap<String, ArrayList<Source>> mapData = new HashMap<String, ArrayList<Source>>();
         Scanner input = new Scanner(System.in);
         
         
@@ -55,7 +55,7 @@ public class DriverSosmed {
                     list2.add(new Source(nama, tglLahir, email, jenisKelamin));
                 }
             
-                System.out.print("\nTekan 1 untuk tambah data dan 0 untuk berhenti : ");
+                System.out.print("\nLanjut entry data ?(1/0) ");
                 mengulang = input.nextInt();
                 System.out.println("");
             }
@@ -68,10 +68,14 @@ public class DriverSosmed {
         System.out.println("------------------------------------");
         
 
-        mapData.put("circle1", list);
-        mapData.put("circle2", list2);
+        mapData.put("circle1", new ArrayList(list));
+        mapData.put("circle2", new ArrayList(list2));
         
 
+        //System.out.println("Circle 1");
+        //System.out.println(mapData.toString());
+        
+        
         System.out.println("Circle 1");
         list.forEach((a) -> {
             System.out.println("Nama : " +a.getNama() +", Tanggal Lahir : " +a.getTglLahir() +" , E-mail : " +a.getEmail() +" , Jenis Kelamin : " +a.getJenisKelamin());
